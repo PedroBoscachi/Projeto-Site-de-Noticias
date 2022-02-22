@@ -11,19 +11,68 @@ body {
 #container {
 	width: 750px;
 	margin: 0 auto;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 
 #top {
 	height: 150px;
 	background: url(../images/detalhe-topo.png) no-repeat right top;
 	padding-top: 25px;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 
 .logo {
 	width: 152px;
 	height: 66px;
 	background: url(../images/logo.png) no-repeat center;
+	/*this technique is for website acessibility for screen readers*/
 	text-indent: -3000px;
+}
+
+/*NAVIGATION BAR*/
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#top ul {
+	margin-top: 30px;
+	background: #b10333;
+	float: left;
+}
+
+#top ul li {
+	float: left;
+}
+
+#top ul a {
+	font-size: 0.9em;
+	display: block;
+	padding: 0.5em 1.4em;
+	line-height: 2.1em;
+	text-decoration: none;
+	color: #FFF;
+	background: url(../images/divisor.png) no-repeat left center;
+}
+
+#top ul .first a {
+	background: none;
+}
+
+#top ul a:hover {
+	color: #69001d;
+}
+
+body.home #navigation a#home,
+body.brazil #navigation a#brazil,
+body.international #navigation a#international,
+body.economy #navigation a#economy,
+body.science #navigation a#science,
+body.health #navigation a#health,
+body.pictures #navigation a#pictures {
+	color: #FFF;
+	background: #de003e;
+	cursor: text;
 }
