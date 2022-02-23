@@ -93,7 +93,6 @@ body.pictures #navigation a#pictures {
 	width: 270px;
 	float: left;
 	margin: 0 0 20px 195px;
-	background: blue;
 }
 
 #two-columns #primary {
@@ -109,7 +108,6 @@ body.pictures #navigation a#pictures {
 	width: 270px;
 	float: left;
 	margin: 0 0 20px 15px;
-	background: green;
 }
 
 /*BOX*/
@@ -172,6 +170,30 @@ input.submit {
 	border: 2px solid #870529;
 	padding: 5px;
 }
+
+/*FORMATTING IMAGES*/
+img.main-image {
+	width: 98%;
+	border: 3px solid #dfdfdf;
+}
+
+/*FORMATTING HEADERS*/
+h3 {
+	text-transform: uppercase;
+	display: inline;
+	font-size: 0.8em;
+	padding: 3px;
+}
+
+.main h3 {
+	background: #b10333;
+	color: #fff;	
+}
+
+.interview h3 {
+	background: #de003e;
+}
+
 
 /*FOOTER */
 #container-footer {
